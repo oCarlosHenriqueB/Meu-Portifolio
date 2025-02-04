@@ -1,0 +1,300 @@
+/* ============================= */
+/* 🎨 Reset Básico & Configuração */
+/* ============================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ECF0F1; /* Cinza Claro - fundo mais suave */
+    color: #333; /* Texto escuro para contraste */
+    line-height: 1.6;
+}
+
+/* ============================= */
+/* 🔹 Cabeçalho & Navegação */
+/* ============================= */
+.header, .footer {
+    background-color: #0A192F; /* Azul Marinho - fundo do cabeçalho e rodapé */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar__link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar__link:hover {
+    color: #1E90FF; /* Azul vibrante no hover */
+}
+
+/* ============================= */
+/* 🖼️ Seção de Apresentação */
+/* ============================= */
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.apresentacao__conteudo {
+    text-align: center;
+    max-width: 800px;
+}
+
+/* Títulos */
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    color: #2C3E50; /* Cinza escuro */
+}
+
+.titulo-destaque {
+    color: #1E90FF; /* Azul vibrante para destacar palavras-chave */
+}
+
+/* Texto */
+.apresentacao__conteudo__texto {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* ============================= */
+/* 🔗 Botões de Redes Sociais */
+/* ============================= */
+.apresentacao__links {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.apresentacao__links__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #2C3E50; /* Cinza escuro para botões */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.apresentacao__links__link img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1); /* Ícones brancos */
+}
+
+/* Efeito Hover */
+.apresentacao__links__link:hover {
+    background: #1E90FF; /* Azul vibrante no hover */
+    transform: scale(1.05);
+}
+
+/* ============================= */
+/* 🖼️ Imagem de Apresentação */
+/* ============================= */
+.apresentacao__imagem img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================= */
+/* 📌 Seção de Projetos */
+/* ============================= */
+#projetos {
+    .projetos__container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    
+    .projeto {
+        background: #2C3E50; /* Cinza escuro para destacar os projetos */
+        color: white;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        width: 280px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .projeto h3 {
+        margin-bottom: 10px;
+        color: #1E90FF; /* Azul vibrante nos títulos */
+    }
+    
+    .projeto p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    
+    .projeto a {
+        background: #1E90FF;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 5px;
+        display: inline-block;
+        font-weight: bold;
+        transition: background 0.3s ease-in-out;
+    }
+    
+    .projeto a:hover {
+        background: #0A192F; /* Azul marinho no hover */
+    }
+    
+    .projeto:hover {
+        transform: translateY(-5px);
+    }
+    
+    margin: 40px;
+    text-align: center;
+}
+
+#projetos ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#projetos li {
+    margin-bottom: 10px;
+}
+
+#projetos a {
+    color: #1E90FF; /* Azul vibrante */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+#projetos a:hover {
+    color: #0A192F; /* Azul marinho no hover */
+    text-decoration: underline;
+}
+
+/* ============================= */
+/* 📌 Rodapé */
+/* ============================= */
+.footer__redes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer__redes img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer__redes img:hover {
+    transform: scale(1.2);
+}
+
+.footer span {
+    color: #1E90FF;
+    .footer__redes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer__redes img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer__redes img:hover {
+    transform: scale(1.2);
+}
+
+}
+
+/* ============================= */
+/* 📱 Responsividade */
+/* ============================= */
+@media (max-width: 768px) {
+    .apresentacao {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .apresentacao__imagem {
+        margin-top: 20px;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        @media (max-width: 768px) {
+            .apresentacao {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+        
+            .apresentacao__imagem img {
+                width: 80%;
+                max-width: 300px;
+            }
+        
+            .navbar {
+                flex-direction: column;
+                gap: 10px;
+            }
+        
+            .apresentacao__links {
+                flex-direction: column;
+                gap: 15px;
+
+                .apresentacao__conteudo__titulo:hover {
+                    color: #1E90FF;
+                    transition: color 0.3s ease-in-out;
+                }
+                
+                .titulo-destaque:hover {
+                    text-decoration: underline;
+                    transition: text-decoration 0.3s ease-in-out;
+                }
+                
+            }
+        }
+         
+    }
+}
